@@ -49,4 +49,42 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 }
 ```
 
+8. Use the Channel API to retrieve the available video channels for your application:
+
+```
+
+NSArray *_channels;
+
+[[BFVideoSDK sharedManager]getAppChannels:^(NSArray *channels){
+        _channels = channels;
+    }failure:^(NSError *error){
+        NSLog(@"Error loading channels: %@",error.description);
+    }];
+```
+
+9. Use the getChannelVideosWith:channelID method to retrieve the videos from a channelID:
+
+```
+NSArray *_videos;
+
+[[BFVideoSDK sharedManager]getChannelVideosWith:channelID pageNum:0 success:^(NSDictionary *videoInfo){
+        NSLog(@"getChannelVideos");
+        _videos = [videoInfo valueForKey:@"videos"];
+    }failure:^(NSError *error){
+        NSLog(@"Error loading channel videos: %@", error.description);
+    }];
+   
+```
+
+9. To play a video use the included BFMVideoDetailController class:
+
+```
+CGRect _rect = CGRectMake(0, 68, self.view.bounds.size.width, self.view.bounds.size.width * 0.7);
+self.videoController = [[BFVideoViewController alloc] initWithVideo:video andRect:_rect];
+[self.view addSubview:self.videoController.view];
+    
+```
+
+See the included example application for more details on integration.
+
 Have a bug? Please [create an issue on GitHub](https://github.com/beachfront/beachfront-videosdk-ios/issues)!
