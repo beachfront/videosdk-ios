@@ -14,7 +14,7 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 
 2. Download the BeachFrontBuilder iOS SDK Embedded Framwork and copy it into your project Folder.
 
-3. Add the BeachFrontBuilderSDK.embeddedFramework to your project and make sure BeachFrontBuilderSDK.framework is included in the "Link Binary with Libraries" panel in the project "Build Phases" section.
+3. Add the BFVideoSDK.framework to your project and make sure BFVideoSDK.framework is included in the "Link Binary with Libraries" panel in the project "Build Phases" section.
 
 4. Also add the following frameworks and libraries one by one by clicking on the + button in the "Link Binary With Libraries" panel.
 ```
@@ -28,7 +28,7 @@ This document details the process of integrating the BeachfrontBuilder SDK with 
 	- QuartzCore.framework
 	- libxml2.dylib
 ```
-5. Make sure that the BeachFrontBuilderSDK.bundle is included in the "Copy Bundle Resources" panel.
+5. Make sure that the BFVideoSDK.framework is included in the "Copy Bundle Resources" panel.
 
 6. In your Build Settings add the flag "-ObjC" to your "Other Linker Flags" entry.
 
