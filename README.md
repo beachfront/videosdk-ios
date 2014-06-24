@@ -88,7 +88,7 @@ NSArray *_videos;
    
 ```
 
-9. To play a video use the included BFMVideoDetailController class:
+9. To play a video use the included BFMVideoViewController class:
 
 ```
 CGRect _rect = CGRectMake(0, 68, self.view.bounds.size.width, self.view.bounds.size.width * 0.7);
