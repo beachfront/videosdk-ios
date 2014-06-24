@@ -97,6 +97,28 @@ self.videoController = [[BFVideoViewController alloc] initWithVideo:video andRec
     
 ```
 
+### Tracking API:
+
+#### Session Start - Called once at the app start point
+
+```
+	/**
+	 * Start Session 
+	 */
+	[[BFVideoSDK sharedManager] startSession];
+	
+```
+
+####  Session End - Call at the app end point. i.e. at applicationWillTerminate()
+
+```
+	/**
+	 * End Session
+	 */
+	[[BFVideoSDK sharedManager] endSession];
+
+```
+
 See the included example application for more details on integration.
 
 Have a bug? Please [create an issue on GitHub](https://github.com/beachfront/beachfront-videosdk-ios/issues)!
