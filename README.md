@@ -1,7 +1,19 @@
 ## BeachFrontBuilder iOS SDK Usage Guide
 
 ## Overview
-This document details the process of integrating the BeachfrontBuilder SDK with your iOS application. 
+A more developer-friendly way of working with Beachfront Media iOS SDK,  Simply add sdk framework & dependencies to your iOS project, call the appropriate methods and you're done :)
+
+## Features
+
+*  Get video channels
+*  Get the videos from a channel supported by pagination
+*  Search videos from a channel or from all.
+*  Get detail of a specific video
+*  Video Player native component
+*  Supports video display both portrait and landscape.
+*  Monetize video with pre-roll ads using the backend monetization rules
+*  Robust Analytics - # installtion & video view is supported out of the box 
+*  Revenue tracking
 
 ## Requirements
 
