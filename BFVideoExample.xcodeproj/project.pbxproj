@@ -24,7 +24,7 @@
 		5F25A0BA194B6FA000728B7C /* BFVideoExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A0B9194B6FA000728B7C /* BFVideoExampleTests.m */; };
 		5F25A150194B94AE00728B7C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25A14E194B94AE00728B7C /* MobileCoreServices.framework */; };
 		5F25A151194B94AE00728B7C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25A14F194B94AE00728B7C /* SystemConfiguration.framework */; };
-		5FB619A11958D31800EB78BD /* BFVideoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB619A01958D31800EB78BD /* BFVideoSDK.framework */; };
+		5F71306D195934430024088E /* BFVideoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F71306C195934430024088E /* BFVideoSDK.framework */; };
 		5FBF9B2919548B990071C5C9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBF9B2819548B990071C5C9 /* CoreTelephony.framework */; };
 		5FBF9B331954921D0071C5C9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBF9B321954921D0071C5C9 /* AdSupport.framework */; };
 		5FC53E72194FE981000DAC7A /* BFMVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC53E71194FE981000DAC7A /* BFMVideosViewController.m */; };
@@ -67,7 +67,7 @@
 		5F25A0B9194B6FA000728B7C /* BFVideoExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFVideoExampleTests.m; sourceTree = "<group>"; };
 		5F25A14E194B94AE00728B7C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5F25A14F194B94AE00728B7C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		5FB619A01958D31800EB78BD /* BFVideoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BFVideoSDK.framework; sourceTree = "<group>"; };
+		5F71306C195934430024088E /* BFVideoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BFVideoSDK.framework; sourceTree = "<group>"; };
 		5FB619A21958D34D00EB78BD /* BFVideoSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFVideoSDK.h; sourceTree = "<group>"; };
 		5FBF9B2819548B990071C5C9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		5FBF9B321954921D0071C5C9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -87,7 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FBF9B331954921D0071C5C9 /* AdSupport.framework in Frameworks */,
-				5FB619A11958D31800EB78BD /* BFVideoSDK.framework in Frameworks */,
+				5F71306D195934430024088E /* BFVideoSDK.framework in Frameworks */,
 				5FBF9B2919548B990071C5C9 /* CoreTelephony.framework in Frameworks */,
 				5F25A150194B94AE00728B7C /* MobileCoreServices.framework in Frameworks */,
 				5F25A151194B94AE00728B7C /* SystemConfiguration.framework in Frameworks */,
@@ -133,7 +133,7 @@
 		5F25A08A194B6FA000728B7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5FB619A01958D31800EB78BD /* BFVideoSDK.framework */,
+				5F71306C195934430024088E /* BFVideoSDK.framework */,
 				5FBF9B321954921D0071C5C9 /* AdSupport.framework */,
 				5FBF9B2819548B990071C5C9 /* CoreTelephony.framework */,
 				5F25A14E194B94AE00728B7C /* MobileCoreServices.framework */,
@@ -449,8 +449,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BFVideoExample/BFVideoExample-Prefix.pch";
 				INFOPLIST_FILE = "BFVideoExample/BFVideoExample-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -470,8 +472,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BFVideoExample/BFVideoExample-Prefix.pch";
 				INFOPLIST_FILE = "BFVideoExample/BFVideoExample-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
