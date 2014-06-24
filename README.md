@@ -1,7 +1,7 @@
 ## BeachFrontBuilder iOS SDK Usage Guide
 
 ## Overview
-A more developer-friendly way of working with Beachfront Media iOS SDK,  Simply add sdk framework & dependencies to your iOS project, call the appropriate methods and you're done :)
+A more developer-friendly way of working with Beachfront Media iOS SDK,  Simply add the sdk framework & dependencies to your iOS project, call the appropriate methods and you're done :)
 
 ## Features
 
